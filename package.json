@@ -1,0 +1,10 @@
+{
+  "name": "style-guide",
+  "version": "0.0.1",
+  "description": "Brainly Front-End tools configuration files",
+  "author": "Brainly",
+  "private": true,
+  "scripts" : {
+    "postinstall": "cp node_modules/frontend-tools-configs/.scss-lint.yml ."
+  }
+}
