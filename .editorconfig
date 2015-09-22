@@ -12,3 +12,7 @@ indent_size = 2
 [*.{scss,less}]
 indent_style = space
 indent_size = 2
+
+[*.{php,twig}]
+indent_style = space
+indent_size = 4
