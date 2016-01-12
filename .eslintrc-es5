@@ -1,7 +1,7 @@
 {
   "env": {
     "es6": false,
-    "node": false
+    "node": true
   },
   "rules": {
     // Enforces getter/setter pairs in objects
