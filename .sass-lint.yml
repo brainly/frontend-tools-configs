@@ -68,7 +68,9 @@ rules:
     - allow-leading-underscore: true
       convention: camelcase
   # Enforce that mixins should be written before declarations in a ruleset
-  mixins-before-declarations: 0
+  mixins-before-declarations:
+    - 2
+    - exclude: [mintBreakpoint]
   # Enforce how deeply a selector can be nested
   nesting-depth:
     - 2
