@@ -68,7 +68,7 @@ rules:
     - allow-leading-underscore: true
       convention: camelcase
   # Enforce that mixins should be written before declarations in a ruleset
-  mixins-before-declarations: 1
+  mixins-before-declarations: 0
   # Enforce how deeply a selector can be nested
   nesting-depth:
     - 2
@@ -97,7 +97,7 @@ rules:
   no-invalid-hex: 2
   # Enforce that selectors aren't repeated and that their properties are merged
   # You may also pass a whitelist of selectors you wish to exclude from merging
-  no-mergeable-selectors: 2
+  no-mergeable-selectors: 0
   # Enforce the correct spelling of CSS properties and prevent the use of unknown CSS properties
   no-misspelled-properties: 1
   # Enforce that selectors are not allowed to have qualifying elements like `div.foo`
