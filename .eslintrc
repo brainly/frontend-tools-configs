@@ -3,6 +3,9 @@
     "es6": true,
     "node": true
   },
+  "ecmaFeatures": {
+    "modules": true
+  },
   "rules": {
     // Enforces getter/setter pairs in objects
     "accessor-pairs": 0,
