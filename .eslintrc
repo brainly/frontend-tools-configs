@@ -263,7 +263,7 @@
     // require identifiers to match the provided regular expression
     "id-match": 0,
     // this option sets a specific tab width for your code
-    "indent": [2, 2],
+    "indent": [2, 2, {"SwitchCase": 1}],
     // specify whether double or single quotes should be used in JSX attributes
     "jsx-quotes": 0,
     // enforces spacing between keys and values in object literal properties
@@ -345,7 +345,7 @@
     // sort variables within the same declaration block
     "sort-vars": 0,
     // require a space after certain keywords
-    "space-after-keywords": 0,
+    "space-after-keywords": 2,
     // require a space before certain keywords
     "space-before-keywords": 0,
     // require or disallow space before blocks

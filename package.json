@@ -1,10 +1,10 @@
 {
   "name": "frontend-tools-configs",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Brainly Front-End tools configuration files",
   "author": "Brainly",
   "private": true,
-  "scripts" : {
+  "scripts": {
     "postinstall": "cp .scss-lint.yml ../../;cp .editorconfig ../../;cp .eslintrc ../../;cp .eslintrc-es5 ../../"
   }
 }
