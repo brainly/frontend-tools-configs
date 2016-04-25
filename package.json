@@ -5,6 +5,6 @@
   "author": "Brainly",
   "private": true,
   "scripts": {
-    "postinstall": "cp .scss-lint.yml ../../;cp .editorconfig ../../;cp .eslintrc ../../;cp .eslintrc-es5 ../../"
+    "postinstall": "cp .editorconfig ../../"
   }
 }
