@@ -185,9 +185,9 @@
     // ensure that the results of typeof are compared against a valid string
     "valid-typeof": 0,
     // require braces in arrow function body
-    "arrow-body-style": 0,
+    "arrow-body-style": ["error", "as-needed"],
     // require parens in arrow function arguments
-    "arrow-parens": 0,
+    "arrow-parens": ["error", "as-needed"],
     // require space before/after arrow function's arrow
     "arrow-spacing": [2, { "before": true, "after": true }],
     // verify super() callings in constructors
