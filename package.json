@@ -5,6 +5,7 @@
   "author": "Brainly",
   "private": true,
   "scripts": {
-    "postinstall": "cp .editorconfig ../../"
+    "postinstall": "cp .editorconfig ../../",
+    "postversion": "git push && git push --tags"
   }
 }
