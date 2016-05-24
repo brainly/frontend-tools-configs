@@ -198,7 +198,7 @@
     // enforce the spacing around the * in generator functions
     "generator-star-spacing": "off",
     // disallow arrow functions where they could be confused with comparisons
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": ["error", {"allowParens": true}],
     // disallow modifying variables of class declarations
     "no-class-assign": "error",
     // disallow modifying variables that are declared using const
