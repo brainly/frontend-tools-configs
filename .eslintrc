@@ -2,6 +2,7 @@
   "env": {
     "browser": true,
     "node": true,
+    "mocha": true,
     "es6": true
   },
   "parserOptions": {
@@ -105,8 +106,6 @@
     "no-div-regex": "off",
     // disallow else after a return in an if
     "no-else-return": "off",
-    // disallow empty functions
-    "no-empty-function": "error",
     // disallow use of empty destructuring patterns
     "no-empty-pattern": "error",
     // disallow comparisons to null without a type-checking operator
@@ -460,7 +459,7 @@
     // enforce spacing between rest and spread operators and their expressions
     "rest-spread-spacing": ["error", "never"],
     // enforce sorted import declarations within modules
-    "sort-imports": "error",
+    "sort-imports": "off",
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": ["error", "never"],
     // require or disallow spacing around the * in yield* expressions
