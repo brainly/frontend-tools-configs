@@ -461,7 +461,7 @@
     // enforce spacing between rest and spread operators and their expressions
     "rest-spread-spacing": ["error", "never"],
     // enforce sorted import declarations within modules
-    "sort-imports": "error",
+    "sort-imports": "off",
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": ["error", "never"],
     // require or disallow spacing around the * in yield* expressions
