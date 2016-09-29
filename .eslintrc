@@ -466,5 +466,8 @@
     "template-curly-spacing": ["error", "never"],
     // require or disallow spacing around the * in yield* expressions
     "yield-star-spacing":  ["error", "after"]
-  }
+  },
+  "plugins": [
+    "react"
+  ]
 }
