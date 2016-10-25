@@ -51,8 +51,6 @@
     "no-invalid-regexp": "error",
     // disallow irregular whitespace outside of strings and comments
     "no-irregular-whitespace": "error",
-    // disallow negation of the left operand of an in expression
-    "no-negated-in-lhs": "error",
     // disallow the use of object properties of the global object (Math and JSON) as functions
     "no-obj-calls": "error",
     // disallow use of Object.prototypes builtins directly
@@ -61,12 +59,16 @@
     "no-regex-spaces": "error",
     // disallow sparse arrays
     "no-sparse-arrays": "error",
+    // disallow template literal placeholder syntax in regular strings
+    "no-template-curly-in-string": "error",
     // Avoid code that looks like two expressions but is actually one
     "no-unexpected-multiline": "error",
     // disallow unreachable statements after a return, throw, continue, or break statement
     "no-unreachable": "error",
     // disallow control flow statements in finally blocks
     "no-unsafe-finally": "error",
+    // disallow negating the left operand of relational operators
+    "no-unsafe-negation": "error",
     // disallow comparisons with the value NaN
     "use-isnan": "error",
     // ensure JSDoc comments are valid
@@ -81,6 +83,8 @@
     "array-callback-return": "error",
     // treat var statements as if they were block scoped
     "block-scoped-var": "off",
+    // enforce that class methods utilize this
+    "class-methods-use-this": "error",
     // specify the maximum cyclomatic complexity allowed in a program
     "complexity": "off",
     // require return statements to either always or never specify values
@@ -125,6 +129,8 @@
     "no-fallthrough": "error",
     // disallow the use of leading or trailing decimal points in numeric literals
     "no-floating-decimal": "off",
+    // disallow assignments to native objects or read-only global variables
+    "no-global-assign": "error",
     // disallow the type conversions with shorter notations
     "no-implicit-coercion": "off",
     // disallow var and named function declarations in the global scope
@@ -147,8 +153,6 @@
     "no-multi-spaces": "off",
     // disallow use of multiline strings
     "no-multi-str": "error",
-    // disallow reassignments of native objects
-    "no-native-reassign": "error",
     // disallow use of new operator for Function object
     "no-new-func": "off",
     // disallows creating new instances of String,Number, and Boolean
@@ -165,6 +169,8 @@
     "no-proto": "off",
     // disallow declaring the same variable more then once
     "no-redeclare": "error",
+    // disallow certain properties on certain objects
+    "no-restricted-properties": "off",
     // disallow use of assignment in return statement
     "no-return-assign": "off",
     // disallow use of `javascript:` urls.
@@ -277,6 +283,10 @@
     "consistent-this": "off",
     // enforce newline at the end of file, with no multiple empty lines
     "eol-last": "off",
+    // allow or disallow spacing between function identifiers and their invocations
+    "func-call-spacing": ["error", "never"],
+    // require function names to match the name of the variable or property to which they are assigned
+    "func-name-matching": "error",
     // require function expressions to have a name
     "func-names": "off",
     // enforces use of function declarations or expressions
@@ -295,10 +305,14 @@
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
     // enforce spacing before and after keywords
     "keyword-spacing": ["error", {"before": true, "after": true}],
+    // enforce position of line comments
+    "line-comment-position": "error",
     // disallow mixed "LF" and "CRLF" as linebreaks
     "linebreak-style": "off",
     // enforces empty lines around comments
     "lines-around-comment": "off",
+    // require or disallow newlines around directives
+    "lines-around-directive": ["error", "always"],
     // specify the maximum depth that blocks can be nested
     "max-depth": "off",
     // specify the maximum length of a line in your program
@@ -351,8 +365,8 @@
     "no-plusplus": "off",
     // disallow use of certain syntax in code
     "no-restricted-syntax": "off",
-    // disallow space between function identifier and application
-    "no-spaced-func": "error",
+    // disallow tabs in file
+    "no-tabs": "off",
     // disallow the use of ternary operators
     "no-ternary": "off",
     // disallow trailing whitespace at the end of lines
@@ -389,6 +403,8 @@
     "semi-spacing": "off",
     // require or disallow use of semicolons instead of ASI
     "semi": "error",
+    // require object keys to be sorted
+    "sort-keys": "off",
     // sort variables within the same declaration block
     "sort-vars": "off",
     // require or disallow space before blocks
@@ -449,6 +465,8 @@
     "prefer-arrow-callback": "off",
     // suggest using of const declaration for variables that are never modified after declared
     "prefer-const": "error",
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    "prefer-numeric-literals": "off",
     // suggest using Reflect methods where applicable
     "prefer-reflect": "off",
     // require rest parameters instead of arguments
@@ -463,6 +481,8 @@
     "rest-spread-spacing": ["error", "never"],
     // enforce sorted import declarations within modules
     "sort-imports": "off",
+    // require symbol descriptions
+    "symbol-description": "error",
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": ["error", "never"],
     // require or disallow spacing around the * in yield* expressions
