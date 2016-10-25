@@ -306,7 +306,7 @@
     // enforce spacing before and after keywords
     "keyword-spacing": ["error", {"before": true, "after": true}],
     // enforce position of line comments
-    "line-comment-position": "error",
+    "line-comment-position": "off",
     // disallow mixed "LF" and "CRLF" as linebreaks
     "linebreak-style": "off",
     // enforces empty lines around comments
