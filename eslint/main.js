@@ -1,19 +1,27 @@
-{
+module.exports = {
+
   "env": {
     "browser": true,
     "node": true,
-    "es6": false
+    "mocha": true,
+    "es6": true
   },
+
   "parserOptions": {
-    "sourceType": "script",
-    "ecmaVersion": 5
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
   },
+
   "rules": {
     // POSSIBLE ERRORS
     // disallow assignment in conditional expressions
-    "no-cond-assign": "off",
+    "no-cond-assign": "error",
     // disallow use of console
-    "no-console": "off",
+    "no-console": "error",
     // disallow use of constant expressions in conditions
     "no-constant-condition": "error",
     // disallow control characters in regular expressions
@@ -33,11 +41,11 @@
     // disallow assigning to the exception in a catch block
     "no-ex-assign": "error",
     // disallow double-negation boolean casts in a boolean context
-    "no-extra-boolean-cast": "off",
+    "no-extra-boolean-cast": "error",
     // disallow unnecessary parentheses
-    "no-extra-parens": "off",
+    "no-extra-parens": ["error", "all", { "nestedBinaryExpressions": false }],
     // disallow unnecessary semicolons
-    "no-extra-semi": "off",
+    "no-extra-semi": "error",
     // disallow overwriting functions written as function declarations
     "no-func-assign": "error",
     // disallow function or variable declarations in nested blocks
@@ -107,7 +115,7 @@
     // disallow else after a return in an if
     "no-else-return": "off",
     // disallow empty functions
-    "no-empty-function": "off",
+    "no-empty-function": "error",
     // disallow use of empty destructuring patterns
     "no-empty-pattern": "error",
     // disallow comparisons to null without a type-checking operator
@@ -129,7 +137,7 @@
     // disallow the type conversions with shorter notations
     "no-implicit-coercion": "off",
     // disallow var and named function declarations in the global scope
-    "no-implicit-globals": "off",
+    "no-implicit-globals": "error",
     // disallow use of eval()-like methods
     "no-implied-eval": "off",
     // disallow this keywords outside of classes or class-like objects
@@ -163,7 +171,7 @@
     // disallow usage of __proto__ property
     "no-proto": "off",
     // disallow declaring the same variable more then once
-    "no-redeclare": "off",
+    "no-redeclare": "error",
     // disallow certain properties on certain objects
     "no-restricted-properties": "off",
     // disallow use of assignment in return statement
@@ -189,7 +197,7 @@
     // disallow unnecessary concatenation of literals or template literals
     "no-useless-concat": "off",
     // disallow unnecessary escape characters
-    "no-useless-escape": "off",
+    "no-useless-escape": "error",
     // disallow use of void operator
     "no-void": "off",
     // disallow usage of configurable warning terms in comments: e.g. todo
@@ -227,11 +235,11 @@
     // disallow use of undefined when initializing variables
     "no-undef-init": "off",
     // disallow use of undeclared variables unless mentioned in a /*global */ block
-    "no-undef": "off",
+    "no-undef": "error",
     // disallow use of undefined variable
     "no-undefined": "off",
     // disallow declaration of variables that are not used in the code
-    "no-unused-vars": "off",
+    "no-unused-vars": "error",
     // disallow use of variables before they are defined
     "no-use-before-define": "off",
 
@@ -259,7 +267,7 @@
 
     // STYLISTIC ISSUES
     // enforce spacing inside array brackets
-    "array-bracket-spacing": "off",
+    "array-bracket-spacing": ["error", "never"],
     // disallow or enforce spaces inside of single line blocks
     "block-spacing": ["error", "never"],
     // enforce one true brace style
@@ -267,9 +275,9 @@
     // require camel case names
     "camelcase": ["error", {"properties": "never"}],
     // disallow trailing commas in object literals
-    "comma-dangle": "off",
+    "comma-dangle": ["error", "never"],
     // enforce spacing before and after comma
-    "comma-spacing": "off",
+    "comma-spacing": ["error", { "before": false, "after": true }],
     // enforce one true comma style
     "comma-style": "off",
     // require or disallow padding inside computed properties
@@ -418,5 +426,70 @@
     "unicode-bom": ["error", "never"],
     // require regex literals to be wrapped in parentheses
     "wrap-regex": "off",
+
+    // ECMAScript 6
+    // require braces in arrow function body
+    "arrow-body-style": ["error", "as-needed"],
+    // require parens in arrow function arguments
+    "arrow-parens": ["error", "as-needed"],
+    // require space before/after arrow function's arrow
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    // verify super() callings in constructors
+    "constructor-super": "error",
+    // enforce the spacing around the * in generator functions
+    "generator-star-spacing": "off",
+    // disallow modifying variables of class declarations
+    "no-class-assign": "error",
+    // disallow arrow functions where they could be confused with comparisons
+    "no-confusing-arrow": ["error", {"allowParens": true}],
+    // disallow modifying variables that are declared using const
+    "no-const-assign": "error",
+    // disallow duplicate name in class members
+    "no-dupe-class-members": "error",
+    // disallow duplicate module imports
+    "no-duplicate-imports": "error",
+    // disallow symbol constructor
+    "no-new-symbol": "error",
+    // disallow specified modules when loaded by import
+    "no-restricted-imports": "off",
+    // disallow to use this/super before super() calling in constructors.
+    "no-this-before-super": "error",
+    // disallow unnecessary computed property keys in object literals
+    "no-useless-computed-key": "error",
+    // disallow unnecessary constructors
+    "no-useless-constructor": "error",
+    // disallow renaming import, export, and destructured assignments to the same name
+    "no-useless-rename": "error",
+    // require let or const instead of var
+    "no-var": "error",
+    // require method and property shorthand syntax for object literals
+    "object-shorthand": ["error", "always"],
+    // suggest using arrow functions as callbacks
+    "prefer-arrow-callback": "off",
+    // suggest using of const declaration for variables that are never modified after declared
+    "prefer-const": "error",
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    "prefer-numeric-literals": "off",
+    // suggest using Reflect methods where applicable
+    "prefer-reflect": "off",
+    // require rest parameters instead of arguments
+    "prefer-rest-params": "error",
+    // suggest using the spread operator instead of .apply()
+    "prefer-spread": "off",
+    // suggest using template literals instead of strings concatenation
+    "prefer-template": "off",
+    // disallow generator functions that do not have yield
+    "require-yield": "off",
+    // enforce spacing between rest and spread operators and their expressions
+    "rest-spread-spacing": ["error", "never"],
+    // enforce sorted import declarations within modules
+    "sort-imports": "off",
+    // require symbol descriptions
+    "symbol-description": "error",
+    // require or disallow spacing around embedded expressions of template strings
+    "template-curly-spacing": ["error", "never"],
+    // require or disallow spacing around the * in yield* expressions
+    "yield-star-spacing":  ["error", "after"]
   }
-}
+
+};
