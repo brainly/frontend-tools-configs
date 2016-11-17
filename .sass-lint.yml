@@ -4,32 +4,35 @@ options:
   formatter: stylish
   merge-default-rules: false
 rules:
-  # Enforce how many elements a BEM selector can contain
+  # Enforce the use of the quotes in attribute values.
+  attribute-quotes: 0
+  # Enforce how many elements a BEM selector can contain.
   bem-depth:
     - 2
     - max-depth: 1
-  # Enforce 'none' when specifying a zero border value
+  # Enforce whether one should use 0 or none when specifying a zero border value
   border-zero:
     - 2
     - convention: none
-  # Enforce the use of the '1tbs' brace style
+  # Enforce the use of the chosen brace style.
   brace-style: 2
-  # Enforce a convention for class names
+  # Enforce a convention for class names.
   class-name-format:
     - 2
     - convention: hyphenatedbem
-  # Enforce @import without leading underscores and filename extensions
+  # Enforce whether or not @import paths should have leading underscores and/or filename extensions.
   clean-import-paths: 2
-  # Enforce that parenthesis should be included if no arguments are
-  # defined or used, when declaring or invoking a mixin.
-  empty-args: 0
-  # Enforce space between blocks
+  # Enforce that declarations should be written before nesting in a ruleset.
+  declarations-before-nesting: 2
+  # Enforce if parenthesis should be included if no arguments are defined or used, when declaring or invoking a mixin.
+  empty-args: 2
+  # Enforce whether or not nested blocks should include a space between the last non-comment declaration or not.
   empty-line-between-blocks: 2
-  # Enforce that extends should be written before declarations in a ruleset
+  # Enforce that extends should be written before declarations in a ruleset.
   extends-before-declarations: 2
-  # Enforce that extends should be written before mixins in a ruleset
+  # Enforce that extends should be written before mixins in a ruleset.
   extends-before-mixins: 2
-  # Enforce file ending with a newline
+  # Enforce whether or not files should end with a newline.
   final-newline: 2
   # Enforce the nesting of attributes
   force-attribute-nesting: 0
@@ -37,7 +40,7 @@ rules:
   force-element-nesting: 0
   # Enforce the nesting of pseudo elements/classes.
   force-pseudo-nesting: 0
-  # Enforce a convention for function names
+  # Enforce a convention for function names.
   function-name-format:
     - 2
     - allow-leading-underscore: true
@@ -50,124 +53,141 @@ rules:
   hex-notation:
     - 2
     - style: lowercase
-  # Enforce a convention for ids
+  # Enforce a convention for ids.
   id-name-format:
     - 2
     - convention: hyphenatedbem
-  # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed
+  # Enforce an indentation size
   indentation:
     - 2
     - size: 2
-  # Enforce that decimal numbers should include a leading zero
+  # Enforce whether or not decimal numbers should include a leading zero.
   leading-zero:
     - 2
     - include: true
-  # Enforce a convention for mixin names
+  # Enforce that a file's length doesn't exceed a certain number of lines
+  max-file-line-count: 0
+  # Enforce that lines do not exceed a max length / limit.
+  max-line-length:
+    - 2
+    - length: 120
+  # Enforce a convention for mixin names.
   mixin-name-format:
     - 2
     - allow-leading-underscore: true
       convention: camelcase
-  # Enforce that mixins should be written before declarations in a ruleset
+  # Enforce that mixins should be written before declarations in a ruleset.
   mixins-before-declarations:
     - 2
-    - exclude: [mintBreakpoint]
-  # Enforce how deeply a selector can be nested
+    - exclude: ['sgBreakpoint']
+  # Enforce that mixins should be written before declarations in a ruleset.
   nesting-depth:
     - 2
     - max-depth: 4
-  # Enforce the use of hexadecimal color values rather than literals
-  no-color-keyword: 2
-  # Disallow the use of color literals and basic color functions in any
-  # declarations other than variables or maps/lists
+  # Warn against the use of attribute selectors.
+  no-attribute-selectors: 0
+  # Disallow the use of hexadecimal colors
+  no-color-hex: 0
+  # Enforce the use of hexadecimal color values rather than literals.
+  no-color-keywords: 2
+  # Disallow the use of color literals and basic color functions in any declarations other than variables or maps/lists.
   no-color-literals: 2
+  # Warn against the use of combinators.
+  no-combinators: 0
   # Enforce the use of Sass single-line comments and disallow CSS comments
-  # Bang comments (/*! */, will be printed even in minified mode) are still allowed
-  no-css-comments: 0
-  # Enforce that @debug statements are not allowed to be used
+  no-css-comments: 2
+  # Enforce that @debug statements are not allowed to be used.
   no-debug: 2
-  # Enforce that duplicate properties are not allowed within the same block
+  # Warn against the use of certain properties.
+  no-disallowed-properties: 0
+  # Enforce that duplicate properties are not allowed within the same block.
   no-duplicate-properties: 2
-  # Enforce that rulesets are not empty
+  # Enforce that rulesets are not empty.
   no-empty-rulesets: 2
-  # Enforce that extends are not allowed to be used
+  # Enforce that extends are not allowed to be used.
   no-extends: 0
-  # Enforce that ID selectors are not allowed to be used
+  # Enforce that ID selectors are not allowed to be used.
   no-ids: 2
-  # Enforce that important declarations are not allowed to be used
-  no-important: 1
-  # Enforce that only valid of hexadecimal values are written
+  # Enforce that important declarations are not allowed to be used.
+  no-important: 2
+  # Enforce that only valid of hexadecimal values are written.
   no-invalid-hex: 2
-  # Enforce that selectors aren't repeated and that their properties are merged
-  # You may also pass a whitelist of selectors you wish to exclude from merging
-  no-mergeable-selectors: 0
-  # Enforce the correct spelling of CSS properties and prevent the use of unknown CSS properties
-  no-misspelled-properties: 1
-  # Enforce that selectors are not allowed to have qualifying elements like `div.foo`
-  no-qualifying-elements: 1
-  # Enforce that trailing zeros are not allowed
+  # Enforce that selectors aren't repeated
+  no-mergeable-selectors: 2
+  # Enforce the correct spelling of CSS properties and prevent the use of unknown CSS properties.
+  no-misspelled-properties: 2
+  # Enforce that selectors are not allowed to have qualifying elements.
+  no-qualifying-elements: 2
+  # Enforce that trailing whitespace is not allowed.
+  no-trailing-whitespace: 2
+  # Enforce that trailing zeros are not allowed.
   no-trailing-zero: 2
-  # Enforce whether the keyword all can be used with the transition or transition-property property
+  # Enforce whether the keyword all can be used with the transition or transition-property property.
   no-transition-all: 2
-  # Enforce that protocols and domains are not used within urls
+  # Warn against the use of * (universal) selectors.
+  no-universal-selectors: 0
+  # Enforce that domains are not used within urls.
+  no-url-domains: 2
+  # Enforce that protocols and domains are not used within urls.
   no-url-protocols: 2
-  # Enforce that vendor prefixes are not allowed to be used
-  no-vendor-prefixes: 1
-  # Enforce that @warn statements are not allowed to be used
+  # Enforce that vendor prefixes are not allowed to be used.
+  no-vendor-prefixes:
+    - 2
+    - ignore-non-standard: true
+  # Enforce that @warn statements are not allowed to be used.
   no-warn: 2
-  # Enforce that new declarations must begin on new lines
+  # Enforce that new declarations must begin on new lines.
   one-declaration-per-line: 2
-  # Enforce whether extends should only include placeholder selectors
+  # Enforce whether extends should only include placeholder selectors.
   placeholder-in-extend: 2
-  # Enforce a convention for placeholder names
+  # Enforce a convention for placeholder names.
   placeholder-name-format:
     - 2
     - convention: hyphenatedbem
-  # Enforce the order in which declarations are written
+  # Enforce the order in which declarations are written.
   property-sort-order: 0
-  # Disallow the use of units not specified in global or per-property
-  # Units specified per-property will override the global units for that property
+  # Disallow the use of units not specified in global or per-property.
   property-units: 0
-  # Enforce whether single quotes ('') or double quotes ("") should be used for all strings
-  quotes:
-    - 2
-    - style: single
-  # Enforce that values in their shorthand form are as concise as specified
+  # Enforce that pseudo-elements must start with double colons, rseudo-classes must start with single colon.
+  pseudo-element: 2
+  # Enforce whether single quotes ('') or double quotes ("") should be used for all strings.
+  quotes: 2
+  # Enforce that values in their shorthand form are as concise as specified.
   shorthand-values: 2
-  # Enforce whether selectors should be placed on a new line
+  # Enforce whether selectors should be placed on a new line.
   single-line-per-selector: 2
-  # Enforce whether or not a space should be included after a bang (!)
-  space-after-bang: 0
-  # Enforce whether or not a space should be included after a colon (:)
+  # Enforce whether or not a space should be included after a bang (!).
+  space-after-bang: 2
+  # Enforce whether or not a space should be included after a colon (:).
   space-after-colon: 2
-  # Enforce whether or not a space should be included after a comma (,)
+  # Enforce whether or not a space should be included after a comma (,).
   space-after-comma: 2
-  # Enforce whether or not a single space should be included before and after the operators
-  space-around-operator: 0
-  # Enforce whether or not a space should be included before a bang (!)
-  space-before-bang: 0
-  # Enforce whether or not a space should be included before a brace ({)
+  # Enforce whether or not a single space should be included before and after the following operators:
+  # +, -, /, *, %, <, > ==, !=, <= and >=.
+  space-around-operator: 2
+  # Enforce whether or not a space should be included before a bang (!).
+  space-before-bang: 2
+  # Enforce whether or not a space should be included before a brace ({).
   space-before-brace: 2
-  # Enforce whether or not a space should be included before a colon (:)
-  # Default false when enabled
+  # Enforce whether or not a space should be included before a colon (:).
   space-before-colon: 2
-  # Enforce whether or not a space should be included before the first item and after
-  # the last item inside parenthesis (()). Default false when enabled
+  # Enforce if a space should be included before the first item and after the last item inside parenthesis (()).
   space-between-parens: 2
   # Enforce whether the last declaration in a block should include a semicolon (;) or not
   trailing-semicolon: 2
-  # Enforce that URLs are wrapped in quotes
+  # Enforce that URLs are wrapped in quotes.
   url-quotes: 2
-  # Enforce the use of variables for the values of specified properties
+  # Enforce the use of variables for the values of specified properties.
   variable-for-property:
     - 2
     - properties:
         - color
         - font
         - font-family
-  # Enforce a convention for variable names
+  # Enforce a convention for variable names.
   variable-name-format:
     - 2
     - allow-leading-underscore: true
       convention: camelcase
-  # Enforce whether or not values of 0 used for length should be unitless
+  # Enforce whether or not values of 0 used for length should be unitless.
   zero-unit: 2
