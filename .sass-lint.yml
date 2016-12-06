@@ -25,7 +25,9 @@ rules:
   # Enforce that declarations should be written before nesting in a ruleset.
   declarations-before-nesting: 2
   # Enforce if parenthesis should be included if no arguments are defined or used, when declaring or invoking a mixin.
-  empty-args: 2
+  empty-args:
+    - 2
+    - include: true
   # Enforce whether or not nested blocks should include a space between the last non-comment declaration or not.
   empty-line-between-blocks: 2
   # Enforce that extends should be written before declarations in a ruleset.
