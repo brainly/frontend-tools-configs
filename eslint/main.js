@@ -18,10 +18,14 @@ module.exports = {
 
   "rules": {
     // POSSIBLE ERRORS
+    // disallow await inside of loops
+    "no-await-in-loop": "error",
+    // disallow comparing against -0
+    "no-compare-neg-zero": "error",
     // disallow assignment in conditional expressions
     "no-cond-assign": "error",
-    // disallow use of console
-    "no-console": "error",
+    // disallow use of console (except warn and error methods)
+    "no-console": ["error", {allow: ["warn", "error"]}],
     // disallow use of constant expressions in conditions
     "no-constant-condition": "error",
     // disallow control characters in regular expressions
@@ -176,6 +180,8 @@ module.exports = {
     "no-restricted-properties": "off",
     // disallow use of assignment in return statement
     "no-return-assign": "off",
+    // disallows unnecessary return await
+    "no-return-await": "error",
     // disallow use of `javascript:` urls.
     "no-script-url": "off",
     // disallow assignments where both sides are exactly the same
@@ -198,14 +204,20 @@ module.exports = {
     "no-useless-concat": "off",
     // disallow unnecessary escape characters
     "no-useless-escape": "error",
+    // disallow return; statement with nothing after it is redundant
+    "no-useless-return": "error",
     // disallow use of void operator
     "no-void": "off",
     // disallow usage of configurable warning terms in comments: e.g. todo
     "no-warning-comments": "off",
     // disallow use of the with statement
     "no-with": "error",
+    // require using Error objects as Promise rejection reasons
+    "prefer-promise-reject-errors": "off",
     // require use of the second argument for parseInt()
     "radix": "off",
+    // disallow async functions which have no await expression
+    "require-await": "off",
     // requires to declare all vars on top of their containing scope
     "vars-on-top": "off",
     // require immediate function invocation to be wrapped in parentheses
@@ -274,6 +286,8 @@ module.exports = {
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     // require camel case names
     "camelcase": ["error", {"properties": "never"}],
+    // enforce or disallow capitalization of the first letter of a comment
+    "capitalized-comments": "off",
     // disallow trailing commas in object literals
     "comma-dangle": ["error", "never"],
     // enforce spacing before and after comma
@@ -356,6 +370,8 @@ module.exports = {
     "no-mixed-operators": "off",
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": "error",
+    // disallow use of chained assignment expressions
+    "no-multi-assign": "error",
     // disallow multiple empty lines
     "no-multiple-empty-lines": "off",
     // disallow negated conditions
@@ -380,6 +396,8 @@ module.exports = {
     "no-unneeded-ternary": "off",
     // disallow whitespace before properties
     "no-whitespace-before-property": "error",
+    // enforce the location of single-line statements
+    "nonblock-statement-body-position": "error",
     // enforce consistent line breaks inside braces
     "object-curly-newline": "off",
     // require or disallow padding inside curly braces
@@ -418,10 +436,12 @@ module.exports = {
     "space-in-parens": ["error", "never"],
     // require spaces around operators
     "space-infix-ops": "error",
-    // Require or disallow spaces before/after unary operators
+    // require or disallow spaces before/after unary operators
     "space-unary-ops": "off",
     // require or disallow a space immediately following the // or /* in a comment
     "spaced-comment": "off",
+    // disallow spacing between template tags and their literals
+    "template-tag-spacing": "error",
     // require or disallow Unicode byte order mark (BOM)
     "unicode-bom": ["error", "never"],
     // require regex literals to be wrapped in parentheses
@@ -468,10 +488,10 @@ module.exports = {
     "prefer-arrow-callback": "off",
     // suggest using of const declaration for variables that are never modified after declared
     "prefer-const": "error",
+    // require destructuring from arrays and/or objects
+    "prefer-destructuring": "off",
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals": "off",
-    // suggest using Reflect methods where applicable
-    "prefer-reflect": "off",
     // require rest parameters instead of arguments
     "prefer-rest-params": "error",
     // suggest using the spread operator instead of .apply()
