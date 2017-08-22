@@ -18,6 +18,10 @@ module.exports = {
 
   "rules": {
     // POSSIBLE ERRORS
+    // enforce “for” loop update clause moving the counter in the right direction.
+    "for-direction": "error",
+    // enforce return statements in getters
+    "getter-return": "error",
     // disallow await inside of loops
     "no-await-in-loop": "error",
     // disallow comparing against -0
@@ -262,6 +266,8 @@ module.exports = {
     "global-require": "off",
     // enforces error handling in callbacks (node environment)
     "handle-callback-err": "off",
+    // disallow use of the Buffer() constructor
+    "no-buffer-constructor": "off",
     // disallow mixing regular variable and require declarations
     "no-mixed-requires": "off",
     // disallow use of new operator with the require function
@@ -278,8 +284,12 @@ module.exports = {
     "no-sync": "off",
 
     // STYLISTIC ISSUES
+    // enforce linebreaks after opening and before closing array brackets
+    "array-bracket-newline": "off",
     // enforce spacing inside array brackets
     "array-bracket-spacing": ["error", "never"],
+    // enforce line breaks between array elements
+    "array-element-newline": "error",
     // disallow or enforce spaces inside of single line blocks
     "block-spacing": ["error", "never"],
     // enforce one true brace style
@@ -328,8 +338,6 @@ module.exports = {
     "linebreak-style": "off",
     // enforces empty lines around comments
     "lines-around-comment": "off",
-    // require or disallow newlines around directives
-    "lines-around-directive": ["error", "always"],
     // specify the maximum depth that blocks can be nested
     "max-depth": "off",
     // specify the maximum length of a line in your program
@@ -350,10 +358,6 @@ module.exports = {
     "new-cap": "error",
     // disallow the omission of parentheses when invoking a constructor with no arguments
     "new-parens": "off",
-    // allow/disallow an empty newline after var statement
-    "newline-after-var": "error",
-    // require an empty line before return statements
-    "newline-before-return": "off",
     // require a newline after each call in a method chain
     "newline-per-chained-call": "off",
     // disallow use of the Array constructor
@@ -414,6 +418,13 @@ module.exports = {
     "operator-linebreak": ["error", "after"],
     // enforce padding within blocks
     "padded-blocks": "off",
+    // require or disallow padding lines between statements
+    "padding-line-between-statements": ["error",
+      {blankLine: "always", prev: "directive", next: "*"},
+      {blankLine: "any", prev: "directive", next: "directive"},
+      {blankLine: "always", prev: ["const", "let", "var"], next: "*"},
+      { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"]}
+    ],
     // require quotes around object literal property names
     "quote-props": "off",
     // specify whether double or single quotes should be used
@@ -421,7 +432,9 @@ module.exports = {
     // Require JSDoc comment
     "require-jsdoc": "off",
     // enforce spacing before and after semicolons
-    "semi-spacing": "off",
+    "semi-spacing": "error",
+    // enforce location of semicolons
+    "semi-style": ["error", "last"],
     // require or disallow use of semicolons instead of ASI
     "semi": "error",
     // require object keys to be sorted
@@ -440,6 +453,8 @@ module.exports = {
     "space-unary-ops": "off",
     // require or disallow a space immediately following the // or /* in a comment
     "spaced-comment": "off",
+    // enforce spacing around colons of switch statements
+    "switch-colon-spacing": "error",
     // disallow spacing between template tags and their literals
     "template-tag-spacing": "error",
     // require or disallow Unicode byte order mark (BOM)
@@ -511,5 +526,4 @@ module.exports = {
     // require or disallow spacing around the * in yield* expressions
     "yield-star-spacing":  ["error", "after"]
   }
-
 };
