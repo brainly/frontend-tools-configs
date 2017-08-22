@@ -12,7 +12,7 @@ This project is a collection of settings for frontend tools used in Brainly
 - eslint/redux.js - config for [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) adjusted for [redux](https://github.com/reactjs/react-redux)
 - eslint/legacy.js - config for [eslint.org](http://eslint.org/) with only ES5 and some legacy settings
 
-Currently supported version: ESLint v3.19.0 
+Currently supported version: ESLint v4.5.0 
 
 ## Sample usage of eslint configs
 
