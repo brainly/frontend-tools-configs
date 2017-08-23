@@ -1,4 +1,5 @@
 module.exports = {
+  'plugins': ['babel'],
   'rules': {
     // require a capital letter for constructors
     'new-cap': 'off',
