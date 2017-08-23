@@ -83,7 +83,7 @@ module.exports = {
     // Prevent extra closing tags for components without children (fixable)
     'react/self-closing-comp': 'off',
     // Enforce component methods order
-    'react/sort-comp': 'off',
+    'react/sort-comp': 'error',
     // Enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': 'off',
     // Enforce style prop value being an object
