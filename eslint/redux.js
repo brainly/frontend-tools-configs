@@ -1,5 +1,5 @@
 module.exports = {
-  "rules": {
-    "react/prop-types": ["error", {ignore: ["dispatch"]}]
+  'rules': {
+    'react/prop-types': ['error', {ignore: ['dispatch']}]
   }
 };
