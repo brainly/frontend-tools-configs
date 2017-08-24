@@ -47,7 +47,7 @@ module.exports = {
     // Prevent usage of isMounted
     'react/no-is-mounted': 'error',
     // Prevent multiple component definition per file
-    'react/no-multi-comp': 'off',
+    'react/no-multi-comp': 'error',
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     'react/no-redundant-should-component-update': 'error',
     // Prevent usage of the return value of React.render
