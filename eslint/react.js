@@ -132,8 +132,6 @@ module.exports = {
     'react/jsx-pascal-case': 'error',
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 'off',
-    // Validate spacing before closing bracket in JSX (fixable)
-    'react/jsx-space-before-closing': 'error',
     // Validate whitespace in and around the JSX opening and closing brackets (fixable)
     'react/jsx-tag-spacing': 'error',
     // Prevent React to be incorrectly marked as unused
