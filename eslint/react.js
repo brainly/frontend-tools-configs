@@ -139,6 +139,8 @@ module.exports = {
     // Prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': 'error',
     // Prevent missing parentheses around multilines JSX (fixable)
-    'react/jsx-wrap-multilines': 'off'
+    'react/jsx-wrap-multilines': 'off',
+    // This rule enforces the consistent use of either double or single quotes in JSX attributes
+    'jsx-quotes':  ["error", "prefer-double"]
   }
 };
