@@ -524,6 +524,43 @@ module.exports = {
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': ['error', 'never'],
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['error', 'after'],
+
+    // IMPORTS
+    // This rule reports any imports that come after non-import statements.
+    'import/first': 'error',
+    // This rule enforces that all exports are declared at the bottom of the file.
+    'import/exports-last': 'error',
+    // Reports if a resolved path is imported more than once.
+    'import/no-duplicates': 'error',
+    // Ensure consistent use of file extension within the import path
+    'import/extensions': ['error', 'never'],
+    // Enforce a convention in module import order
+    'import/order': ['error', 'never'],
+    // When there is only a single export from a module, prefer using default export over named export.
+    'import/prefer-default-export': 'error',
+    // Enforces having one or more empty lines after the last top-level import statement or require call.
+    'import/newline-after-import': 'error',
+    // Reports if a module's default export is unnamed
+    'import/no-anonymous-default-export': ['error', {
+      'allowArray': false,
+      'allowArrowFunction': false,
+      'allowAnonymousClass': false,
+      'allowAnonymousFunction': false,
+      'allowLiteral': false,
+      'allowObject': false
+    }],
+    // Reports require([array], ...) and define([array], ...) function calls at the module scope.
+    'import/no-amd': 'error',
+
+    // https://github.com/benmosher/eslint-plugin-import  Module systems & Style guide done
+
+    /* Useful but only for front
+      // Reports require([string]) function calls.
+      'import/no-commonjs': 'error',
+      // Forbid the use of Node.js builtin modules
+      'import/no-nodejs-modules': 'error',
+    */
+
   }
 };
