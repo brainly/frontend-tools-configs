@@ -552,15 +552,15 @@ module.exports = {
     }],
     // Reports require([array], ...) and define([array], ...) function calls at the module scope.
     'import/no-amd': 'error',
-
-    // https://github.com/benmosher/eslint-plugin-import  Module systems & Style guide done
-
-    /* Useful but only for front
-      // Reports require([string]) function calls.
-      'import/no-commonjs': 'error',
-      // Forbid the use of Node.js builtin modules
-      'import/no-nodejs-modules': 'error',
-    */
-
+    // Enforces names exist at the time they are dereferenced, when imported as a full namespace
+    'import/namespace': 'error',
+    // Reports funny business with exports, like repeated exports of names or defaults.
+    'import/export': 'error',
+    // Reports use of an exported name as the locally imported name of a default export.
+    'import/no-named-as-default': 'error',
+    // Reports use of an exported name as a property on the default export.
+    'import/no-named-as-default-member': 'error',
+    // Forbids the use of mutable exports with var or let.
+    'import/no-mutable-exports': 'error'
   }
 };
