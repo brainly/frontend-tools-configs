@@ -541,8 +541,6 @@ module.exports = {
     }],
     // Enforce a convention in module import order
     'import/order': 'error',
-    // When there is only a single export from a module, prefer using default export over named export.
-    'import/prefer-default-export': 'error',
     // Enforces having one or more empty lines after the last top-level import statement or require call.
     'import/newline-after-import': 'error',
     // Reports if a module's default export is unnamed
