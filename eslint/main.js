@@ -6,6 +6,9 @@ module.exports = {
     'mocha': true,
     'es6': true
   },
+  'plugins': [
+    'import'
+  ],
 
   'parserOptions': {
     'sourceType': 'module',
@@ -529,14 +532,21 @@ module.exports = {
     // IMPORTS
     // This rule reports any imports that come after non-import statements.
     'import/first': 'error',
-    // This rule enforces that all exports are declared at the bottom of the file.
-    'import/exports-last': 'error',
     // Reports if a resolved path is imported more than once.
     'import/no-duplicates': 'error',
+
+    // TODO  Not working now :/ check in next version, coz very nice rule
+    // issue on github: https://github.com/benmosher/eslint-plugin-import/issues/953
+    // // This rule enforces that all exports are declared at the bottom of the file.
+    // 'import/exports-last': 'error',
+
     // Ensure consistent use of file extension within the import path
-    'import/extensions': ['error', 'never'],
+    'import/extensions': ['error', {
+      js: 'never',
+      jsx: 'never'
+    }],
     // Enforce a convention in module import order
-    'import/order': ['error', 'never'],
+    'import/order': 'error',
     // When there is only a single export from a module, prefer using default export over named export.
     'import/prefer-default-export': 'error',
     // Enforces having one or more empty lines after the last top-level import statement or require call.

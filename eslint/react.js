@@ -141,6 +141,6 @@ module.exports = {
     // Prevent missing parentheses around multilines JSX (fixable)
     'react/jsx-wrap-multilines': 'off',
     // This rule enforces the consistent use of either double or single quotes in JSX attributes
-    'jsx-quotes':  ["error", "prefer-double"]
+    'jsx-quotes': ['error', 'prefer-double']
   }
 };
