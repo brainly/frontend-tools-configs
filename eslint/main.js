@@ -534,12 +534,6 @@ module.exports = {
     'import/first': 'error',
     // Reports if a resolved path is imported more than once.
     'import/no-duplicates': 'error',
-
-    // TODO  Not working now :/ check in next version, coz very nice rule
-    // issue on github: https://github.com/benmosher/eslint-plugin-import/issues/953
-    // // This rule enforces that all exports are declared at the bottom of the file.
-    // 'import/exports-last': 'error',
-
     // Ensure consistent use of file extension within the import path
     'import/extensions': ['error', {
       js: 'never',
