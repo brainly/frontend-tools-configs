@@ -553,7 +553,7 @@ module.exports = {
       'allowAnonymousClass': false,
       'allowAnonymousFunction': false,
       'allowLiteral': false,
-      'allowObject': false
+      'allowObject': true
     }],
     // Reports require([array], ...) and define([array], ...) function calls at the module scope.
     'import/no-amd': 'error',
