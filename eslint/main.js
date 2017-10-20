@@ -6,6 +6,9 @@ module.exports = {
     'mocha': true,
     'es6': true
   },
+  'plugins': [
+    'import'
+  ],
 
   'parserOptions': {
     'sourceType': 'module',
@@ -524,6 +527,45 @@ module.exports = {
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': ['error', 'never'],
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['error', 'after'],
+
+    // IMPORTS
+    // This rule reports any imports that come after non-import statements.
+    'import/first': 'error',
+    // Reports if a resolved path is imported more than once.
+    'import/no-duplicates': 'error',
+    // Ensure consistent use of file extension within the import path
+    'import/extensions': ['error', {
+      js: 'never',
+      jsx: 'never'
+    }],
+
+    // TODO postponed for next PR
+    // Enforce a convention in module import order
+    // 'import/order': 'error',
+
+    // Enforces having one or more empty lines after the last top-level import statement or require call.
+    'import/newline-after-import': 'error',
+    // Reports if a module's default export is unnamed
+    'import/no-anonymous-default-export': ['error', {
+      'allowArray': false,
+      'allowArrowFunction': false,
+      'allowAnonymousClass': false,
+      'allowAnonymousFunction': false,
+      'allowLiteral': false,
+      'allowObject': false
+    }],
+    // Reports require([array], ...) and define([array], ...) function calls at the module scope.
+    'import/no-amd': 'error',
+    // Enforces names exist at the time they are dereferenced, when imported as a full namespace
+    'import/namespace': 'error',
+    // Reports funny business with exports, like repeated exports of names or defaults.
+    'import/export': 'error',
+    // Reports use of an exported name as the locally imported name of a default export.
+    'import/no-named-as-default': 'error',
+    // Reports use of an exported name as a property on the default export.
+    'import/no-named-as-default-member': 'error',
+    // Forbids the use of mutable exports with var or let.
+    'import/no-mutable-exports': 'error'
   }
 };
