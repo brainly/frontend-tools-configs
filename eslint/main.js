@@ -539,8 +539,11 @@ module.exports = {
       js: 'never',
       jsx: 'never'
     }],
+
+    // TODO postponed for next PR
     // Enforce a convention in module import order
-    'import/order': 'error',
+    // 'import/order': 'error',
+
     // Enforces having one or more empty lines after the last top-level import statement or require call.
     'import/newline-after-import': 'error',
     // Reports if a module's default export is unnamed
