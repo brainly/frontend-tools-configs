@@ -380,7 +380,7 @@ module.exports = {
     // disallow use of chained assignment expressions
     'no-multi-assign': 'error',
     // disallow multiple empty lines
-    'no-multiple-empty-lines': 'off',
+    'no-multiple-empty-lines': ['error', {max: 1}],
     // disallow negated conditions
     'no-negated-condition': 'off',
     // disallow nested ternary expressions
@@ -539,11 +539,8 @@ module.exports = {
       js: 'never',
       jsx: 'never'
     }],
-
-    // TODO postponed for next PR
     // Enforce a convention in module import order
-    // 'import/order': 'error',
-
+    'import/order': 'off', //turned off coz to much effort to change files, no autofix option
     // Enforces having one or more empty lines after the last top-level import statement or require call.
     'import/newline-after-import': 'error',
     // Reports if a module's default export is unnamed
