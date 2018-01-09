@@ -137,6 +137,11 @@ const doSomeAsyncStuff = blah => {
 # Testing
 
 ### Use `describe` and `it`
+
+Do not use `test`.
+
+Always use top-level `describe`.
+
 Good:
 ```js
 describe('Something', () => {
@@ -148,18 +153,6 @@ Bad:
 ```js
 test('something', () => {
 })
-```
-
-### Use top level `describe`
-Good:
-```js
-describe('Something', () => {
-  it('does something', () => {
-  })
-})
-```
-Bad:
-```js
 // top level
 it('does something', () => {
 })
@@ -255,6 +248,7 @@ describe('<Some Component />', () => {
 
 ### Enzyme `shallow` vs `mount`
 Avoid using `mount`, it usually means you're testing to much stuff in one test.
+
 #### Event handling
 `ShallowWrapper.simulate()` API does not mock events (unlike `mount`), but prefer to mock events yourself, than using `mount` for this reason:
 
