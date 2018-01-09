@@ -28,7 +28,7 @@ export default {
 # React
 
 ### `classNames`
-Use `classNames` helper always, when there is more than one class name. Use string for a single class name.
+Use [`classNames`](https://github.com/JedWatson/classnames#classnames) helper always, when there is more than one class name. Use string for a single class name.
 
 Good:
 ```js
