@@ -1,7 +1,23 @@
 # General
 
 ### Date/datetime handling
-Do not use `Date()` and `Date().now`, use helper functions instead.
+Do not use `Date()` and `Date().now`, use [helper functions](https://github.com/brainly/common-web-bundle/blob/master/src/Brainly/WebComponents/Resources/js/date.js) instead.
+
+**Why?**
+
+It's much easier to mock it for testing.
+
+Good:
+```js
+const timestamp = getCurrentTimestamp();
+const date = getCurrentDate();
+```
+
+Bad:
+```js
+const timestamp = Date.now();
+const date = new Date();
+```
 
 ### Default exports
 If a file contains one main component / class, function, **do** export it as default.
