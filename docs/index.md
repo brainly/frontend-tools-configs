@@ -128,8 +128,8 @@ We use `thunk` middleware + `async`/`await` for actions with side-effects and sa
 ```js
 const doSomeAsyncStuff = blah => {
   return async dispatch => {
-    const result = await someAsyncStuff(blah)
-    dispatch(onAsyncStuffFinished(result))
+    const result = await someAsyncStuff(blah);
+    dispatch(onAsyncStuffFinished(result));
   }
 }
 ```
@@ -200,7 +200,7 @@ it('Does something.', () => {
 ```
 
 ### Code elements in tests descriptions
-Use names from code in descriptions, keep the same case: `SomeClass`, `someVariable`, `SOME_CONST`
+Use names from code in descriptions, keep the same case: `SomeClass`, `someVariable`, `SOME_CONST`.
 
 Use `<SomeComponent />` when referring to React Components or Elements.
 
@@ -260,13 +260,13 @@ Avoid using `mount`, it usually means you're testing to much stuff in one test.
 
 Good:
 ```js
-wrapper = shallow(<MyComponent />)
-wrapper.simulate('click', {whatever: 'blah'})
+wrapper = shallow(<MyComponent />);
+wrapper.simulate('click', {whatever: 'blah'});
 ```
 Bad:
 ```js
-wrapper = mount(<MyComponent />)
-wrapper.simulate('click')
+wrapper = mount(<MyComponent />);
+wrapper.simulate('click');
 ```
 
 ### Enzyme selectors
@@ -278,17 +278,17 @@ Avoid using DOM selectors by id, class, unless testing some low-level components
 
 Good:
 ```js
-wrapper.find('div')
-wrapper.find(SomeComponent)
-wrapper.find(SomeComponent).filter({someProps: value})
+wrapper.find('div');
+wrapper.find(SomeComponent);
+wrapper.find(SomeComponent).filter({someProps: value});
 
 // Good, but avoid in most cases, only needed in low-level components.  
-wrapper.find('.class-name')
+wrapper.find('.class-name');
 ```
 Bad:
 ```js
 // Bad - selecting user-defined component by display name - use constructor.
-wrapper.find('SomeComponent')
+wrapper.find('SomeComponent');
 // Bad - selecting with string syntax - use filter and object syntax.
-wrapper.find('SomeComponent[someProps=value]')
+wrapper.find('SomeComponent[someProps=value]');
 ```
