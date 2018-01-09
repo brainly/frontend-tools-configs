@@ -163,12 +163,12 @@ Keep test description simple and short, use correct English grammar.
 
 Keep in mind that nested describes + it should create a sentence, so:
 ```js
-describe('A', () => {
-  describe('B', () => {
-    it('C', () => {
+describe('<MyComponent />', () => {
+  describe('error handling', () => {
+    it('works', () => {
      ...
 ```
-results in a sentence: *"A B C"*
+results in a sentence: *"\<MyComponent /> error handling works"*
 
 Do not use uppercase/punctuation to start/end sentences though.
 
