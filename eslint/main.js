@@ -258,7 +258,7 @@ module.exports = {
     // disallow use of undefined variable
     'no-undefined': 'off',
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': 'error',
+    'no-unused-vars': ["error", { "ignoreRestSiblings": true }],
     // disallow use of variables before they are defined
     'no-use-before-define': 'off',
 
