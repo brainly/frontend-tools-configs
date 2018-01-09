@@ -1,7 +1,7 @@
 # General
 
 ### Date/datetime handling
-Do not use `Date()` i `Date().now`, use helper functions instead.
+Do not use `Date()` and `Date().now`, use helper functions instead.
 
 ### Default exports
 If a file contains one main component / class, function, **do** export it as default.
@@ -46,7 +46,7 @@ Bad:
 ### Using `ref`s
 Do not use `ref` to access a Component instance - we want to keep our components API as clean and closed as possible.
 
-It's ok to use `ref` for accessing a DOM elements:
+It's OK to use `ref` for accessing DOM elements:
 
 Good:
 ```js
