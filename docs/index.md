@@ -47,13 +47,13 @@ export default {
 Use [`classNames`](https://github.com/JedWatson/classnames#classnames) helper always, when there is more than one class name. Use string for a single class name.
 
 Good:
-```js
+```jsx
   <MyComponent className="single-class" />
   
   <MyComponent className={classNames('first-class', 'second-class')} />
 ```
 Bad:
-```js
+```jsx
   <MyComponent className={classNames('single-class')} />
   
   <MyComponent className="first-class second-class" />
@@ -65,17 +65,17 @@ Do not use `ref` to access a Component instance - we want to keep our components
 It's OK to use `ref` for accessing DOM elements:
 
 Good:
-```js
+```jsx
 <iframe ref={this.iframeRef} />
 ```
 Bad:
-```js
+```jsx
 <SomeComponent ref={this.iframeRef} />
 ```
 
 #### Exposing child `ref` to parents
 When you need to let a parent components to control a child element, it's a good pattern to expose a rendered element `ref`, like:
-```js
+```jsx
 const SomeComponent = ({iframeRef}) => {
   return <iframe ref={iframeRef} />
 }
@@ -87,7 +87,7 @@ Handler props names should start with `on`.
 
 The actual implementation should start with `handle`.
 
-```js
+```jsx
   handleSomeEvent = () => ...
   
   render() {
