@@ -43,22 +43,6 @@ export default {
 
 # React
 
-### `classNames`
-Use [`classNames`](https://github.com/JedWatson/classnames#classnames) helper always, when there is more than one class name. Use string for a single class name.
-
-Good:
-```jsx
-  <MyComponent className="single-class" />
-  
-  <MyComponent className={classNames('first-class', 'second-class')} />
-```
-Bad:
-```jsx
-  <MyComponent className={classNames('single-class')} />
-  
-  <MyComponent className="first-class second-class" />
-```
-
 ### Using `ref`s
 Do not use `ref` to access a Component instance - we want to keep our components API as clean and closed as possible.
 
