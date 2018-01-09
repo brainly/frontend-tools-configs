@@ -1,4 +1,4 @@
-# Brainly frontend tools configs
+# Brainly frontend tools configs and docs
 
 This project is a collection of settings for frontend tools used in Brainly
 
@@ -26,3 +26,6 @@ Use extend option to include config files like:
     "./node_modules/frontend-tools-configs/eslint/redux.js"]
 }
 ```
+
+# Docs
+[docs/](docs/) directory is used to keep track of coding standard decisions that we make.
