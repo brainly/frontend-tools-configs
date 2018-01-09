@@ -100,7 +100,7 @@ The actual implementation should start with `handle`.
 # Redux
 
 ### Action format
-Use [Flux Standard Actions](https://github.com/acdlite/flux-standard-actios).
+Use [Flux Standard Actions](https://github.com/acdlite/flux-standard-action#flux-standard-action).
 
 ### Naming actions
 
