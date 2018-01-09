@@ -250,7 +250,7 @@ describe('<Some Component />', () => {
 Avoid using `mount`, it usually means you're testing to much stuff in one test.
 
 #### Event handling
-`ShallowWrapper.simulate()` API does not mock events (unlike `mount`), but prefer to mock events yourself, than using `mount` for this reason:
+`ShallowWrapper.simulate()` API does not mock events (unlike `mount`), but do not use `mount` for this reason - mock events yourself.
 
 Good:
 ```js
