@@ -164,7 +164,7 @@ module.exports = {
     // disallow the use of magic numbers
     'no-magic-numbers': 'off',
     // disallow use of multiple spaces
-    'no-multi-spaces': 'off',
+    'no-multi-spaces': 'error',
     // disallow use of multiline strings
     'no-multi-str': 'error',
     // disallow use of new operator for Function object
