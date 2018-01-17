@@ -97,7 +97,7 @@ module.exports = {
     // Enforce boolean attributes notation in JSX (fixable)
     'react/jsx-boolean-value': 'error',
     // Validate closing bracket location in JSX (fixable)
-    'react/jsx-closing-bracket-location': 'error',
+    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
     // Validate closing tag location in JSX
     'react/jsx-closing-tag-location': 'error',
     // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
