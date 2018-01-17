@@ -26,6 +26,8 @@ module.exports = {
     'react/forbid-prop-types': 'off',
     // Forbid foreign propTypes
     'react/forbid-foreign-prop-types': 'error',
+    // Prevent using this.state inside this.setState
+    'react/no-access-state-in-setstate': 'error',
     // Prevent using Array index in key props
     'react/no-array-index-key': 'off',
     // Prevent passing children as props
@@ -39,7 +41,7 @@ module.exports = {
     // Prevent usage of setState in componentDidMount
     'react/no-did-mount-set-state': 'error',
     // Prevent usage of setState in componentDidUpdate
-    'react/no-did-update-set-state': 'off',
+    'react/no-did-update-set-state': 'error',
     // Prevent direct mutation of this.state
     'react/no-direct-mutation-state': 'error',
     // Prevent usage of findDOMNode
@@ -81,7 +83,7 @@ module.exports = {
     // Enforce ES5 or ES6 class for returning value in render function
     'react/require-render-return': 'error',
     // Prevent extra closing tags for components without children (fixable)
-    'react/self-closing-comp': 'off',
+    'react/self-closing-comp': 'error',
     // Enforce component methods order
     'react/sort-comp': 'error',
     // Enforce propTypes declarations alphabetical sorting
@@ -95,7 +97,7 @@ module.exports = {
     // Enforce boolean attributes notation in JSX (fixable)
     'react/jsx-boolean-value': 'error',
     // Validate closing bracket location in JSX (fixable)
-    'react/jsx-closing-bracket-location': 'off',
+    'react/jsx-closing-bracket-location': 'error',
     // Validate closing tag location in JSX
     'react/jsx-closing-tag-location': 'error',
     // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
@@ -105,17 +107,20 @@ module.exports = {
     // Restrict file extensions that may contain JSX
     'react/jsx-filename-extension': 'error',
     // Enforce position of the first prop in JSX
-    'react/jsx-first-prop-new-line': 'off',
+    'react/jsx-first-prop-new-line': ['error', 'multiline'],
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 'off',
     // Validate JSX indentation
     'react/jsx-indent': ['error', 2],
     // Validate props indentation in JSX (fixable)
-    'react/jsx-indent-props': 'off',
+    'react/jsx-indent-props': ['error', 2],
     // Validate JSX has key prop when in array or iterator
     'react/jsx-key': 'error',
     // Limit maximum of props on a single line in JSX
-    'react/jsx-max-props-per-line': 'off',
+    'react/jsx-max-props-per-line': ['error', {
+      'maximum': 1,
+      'when': 'multiline'
+    }],
     // Prevent usage of .bind() and arrow functions in JSX props
     'react/jsx-no-bind': 'error',
     // Prevent comments from being inserted as text nodes
@@ -139,7 +144,15 @@ module.exports = {
     // Prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': 'error',
     // Prevent missing parentheses around multilines JSX (fixable)
-    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-wrap-multilines': ['error', {
+      'declaration': 'parens-new-line',
+      'assignment': 'parens-new-line',
+      'return': 'parens-new-line',
+      'arrow': 'parens-new-line',
+      'condition': 'ignore',
+      'logical': 'ignore',
+      'prop': 'ignore'
+    }],
     // This rule enforces the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double']
   }

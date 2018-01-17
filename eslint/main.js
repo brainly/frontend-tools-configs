@@ -54,7 +54,10 @@ module.exports = {
     // disallow double-negation boolean casts in a boolean context
     'no-extra-boolean-cast': 'error',
     // disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all', {'nestedBinaryExpressions': false}],
+    'no-extra-parens': ['error', 'all', {
+      'nestedBinaryExpressions': false,
+      'ignoreJSX': 'multi-line'
+    }],
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',
     // disallow overwriting functions written as function declarations
@@ -258,7 +261,7 @@ module.exports = {
     // disallow use of undefined variable
     'no-undefined': 'off',
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ["error", { "ignoreRestSiblings": true }],
+    'no-unused-vars': ['error', {'ignoreRestSiblings': true}],
     // disallow use of variables before they are defined
     'no-use-before-define': 'off',
 
@@ -448,9 +451,9 @@ module.exports = {
     'space-before-blocks': ['error', 'always'],
     // require or disallow space before function opening parenthesis
     'space-before-function-paren': ['error', {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always'
     }],
     // require or disallow spaces inside parentheses
     'space-in-parens': ['error', 'never'],
