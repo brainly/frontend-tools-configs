@@ -4,7 +4,7 @@ module.exports = {
   ],
   'settings': {
     'flowtype': {
-      'onlyFilesWithFlowAnnotation': true
+      'onlyFilesWithFlowAnnotation': false
     }
   },
   'rules': {
