@@ -492,7 +492,8 @@ module.exports = {
     // disallow duplicate name in class members
     'no-dupe-class-members': 'error',
     // disallow duplicate module imports
-    'no-duplicate-imports': 'error',
+    // we're using the smarter `import/no-duplicates` rule, this one does not handle type imports
+    'no-duplicate-imports': 'off',
     // disallow symbol constructor
     'no-new-symbol': 'error',
     // disallow specified modules when loaded by import
