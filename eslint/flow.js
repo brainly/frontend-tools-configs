@@ -52,7 +52,7 @@ module.exports = {
     ],
     'flowtype/type-id-match': [
       'error',
-      '^([A-Z][a-z0-9]+)+Type$'
+      '^([A-Z][a-z0-9]*)+Type$'
     ],
     'flowtype/union-intersection-spacing': [
       'error',
