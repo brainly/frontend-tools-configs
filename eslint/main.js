@@ -56,7 +56,8 @@ module.exports = {
     // disallow unnecessary parentheses
     'no-extra-parens': ['error', 'all', {
       'nestedBinaryExpressions': false,
-      'ignoreJSX': 'multi-line'
+      'ignoreJSX': 'multi-line',
+      'enforceForArrowConditionals': true
     }],
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',
