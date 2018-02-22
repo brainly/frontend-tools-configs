@@ -57,7 +57,7 @@ module.exports = {
     'no-extra-parens': ['error', 'all', {
       'nestedBinaryExpressions': false,
       'ignoreJSX': 'multi-line',
-      'enforceForArrowConditionals': true
+      'enforceForArrowConditionals': false
     }],
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',
