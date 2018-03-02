@@ -133,6 +133,8 @@ module.exports = {
     'no-implied-eval': 'off',
     // disallow this keywords outside of classes or class-like objects
     'no-invalid-this': 'error',
+    // the above rule is ignored here and there, let's not repeat ourselves
+    'babel/no-invalid-this': 'off',
     // disallow usage of __iterator__ property
     'no-iterator': 'off',
     // disallow use of labeled statements
@@ -233,6 +235,8 @@ module.exports = {
     'no-unused-vars': 'off',
     // disallow use of variables before they are defined
     'no-use-before-define': 'off',
+    // require let or const instead of var
+    'no-var': 'off',
 
     // NODE.JS AND COMMONJS
     // enforce return after a callback
@@ -325,6 +329,8 @@ module.exports = {
     'multiline-ternary': 'off',
     // require a capital letter for constructors
     'new-cap': 'error',
+     // the above rule is ignored here and there, let's not repeat ourselves
+    'babel/new-cap': 'off',
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 'off',
     // allow/disallow an empty newline after var statement
@@ -349,6 +355,8 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'error',
     // disallow multiple empty lines
     'no-multiple-empty-lines': 'off',
+    // disallow use of chained assignment expressions
+    'no-multi-assign': 'off',
     // disallow negated conditions
     'no-negated-condition': 'off',
     // disallow nested ternary expressions
@@ -369,6 +377,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     // disallow the use of Boolean literals in conditional expressions
     'no-unneeded-ternary': 'off',
+    // disallow redundant return statements
+    'no-useless-return': 'off',
     // disallow whitespace before properties
     'no-whitespace-before-property': 'error',
     // enforce consistent line breaks inside braces
@@ -377,6 +387,8 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     // enforce placing object properties on separate lines
     'object-property-newline': 'off',
+    // require Object Literal Shorthand Syntax
+    'object-shorthand': 'off',
     // require or disallow newlines around var declarations
     'one-var-declaration-per-line': 'off',
     // allow just one var statement per function
@@ -387,6 +399,8 @@ module.exports = {
     'operator-linebreak': ['error', 'after'],
     // enforce padding within blocks
     'padded-blocks': 'off',
+    // suggest using the rest parameters instead of arguments
+    'prefer-rest-params': 'off',
     // require quotes around object literal property names
     'quote-props': 'off',
     // specify whether double or single quotes should be used
