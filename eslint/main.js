@@ -544,7 +544,7 @@ module.exports = {
     // Reports if a resolved path is imported more than once.
     'import/no-duplicates': 'error',
     // Ensure consistent use of file extension within the import path
-    'import/extensions': ['error', {
+    'import/extensions': ['error', 'ignorePackages', {
       js: 'never',
       jsx: 'never'
     }],
