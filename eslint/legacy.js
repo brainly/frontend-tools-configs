@@ -329,7 +329,7 @@ module.exports = {
     'multiline-ternary': 'off',
     // require a capital letter for constructors
     'new-cap': 'error',
-     // the above rule is ignored here and there, let's not repeat ourselves
+    // the above rule is ignored here and there, let's not repeat ourselves
     'babel/new-cap': 'off',
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': 'off',
