@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brainly",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Brainly's base shareable ESLint config",
   "main": "index.js",
   "repository": {

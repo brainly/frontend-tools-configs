@@ -17,7 +17,7 @@ Install the `eslint-config-brainly` package with `yarn`/`npm` and make sure that
 npx install-peerdeps --dev eslint-config-brainly
 ```
 
-And extend the `"brainly"` setup in your `.eslintrc`
+and extend the `"brainly"` setup in your `.eslintrc`:
 ```json
 {
     "extends": "brainly"

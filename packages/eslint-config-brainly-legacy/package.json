@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-brainly-legacy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Brainly's shareable ESLint config for legacy ES5 projects",
     "main": "index.js",
     "repository": {
