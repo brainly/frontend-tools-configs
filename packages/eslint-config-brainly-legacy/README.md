@@ -17,7 +17,7 @@ Install the `eslint-config-brainly-legacy` package with `yarn`/`npm`:
 yarn add --dev eslint-config-brainly-legacy
 ```
 
-And extend the `"brainly-legacy"` setup in your `.eslintrc`
+and extend the `"brainly-legacy"` setup in your `.eslintrc`:
 ```json
 {
     "extends": "brainly-legacy"
