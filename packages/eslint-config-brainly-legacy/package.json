@@ -12,7 +12,8 @@
       "eslint",
       "eslintconfig",
       "config",
-      "brainly"
+      "brainly",
+      "es5"
     ],
     "license": "MIT",
     "peerDependencies": {

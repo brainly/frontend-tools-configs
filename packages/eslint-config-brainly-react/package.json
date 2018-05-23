@@ -12,7 +12,8 @@
     "eslint",
     "eslintconfig",
     "config",
-    "brainly"
+    "brainly",
+    "react"
   ],
   "license": "MIT",
   "dependencies": {
