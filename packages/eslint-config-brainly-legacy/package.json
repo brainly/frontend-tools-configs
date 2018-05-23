@@ -1,0 +1,22 @@
+{
+    "name": "eslint-config-brainly-legacy",
+    "version": "0.1.0",
+    "description": "Brainly's shareable ESLint config for legacy ES5 projects",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/brainly/frontend-tools-configs"
+    },
+    "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-legacy",
+    "keywords": [
+      "eslint",
+      "eslintconfig",
+      "config",
+      "brainly"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+      "eslint": "^4.5.0"
+    }
+  }
+  
