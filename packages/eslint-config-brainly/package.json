@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-brainly",
+  "version": "0.1.0",
+  "description": "Brainly's base shareable ESLint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainly/frontend-tools-configs"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "brainly"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
