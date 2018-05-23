@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-brainly-react",
+  "version": "0.1.1",
+  "description": "Brainly's shareable ESLint config for React projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainly/frontend-tools-configs"
+  },
+  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-react",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "brainly"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-brainly": "^0.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
