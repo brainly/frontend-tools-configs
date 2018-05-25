@@ -1,19 +1,7 @@
 {
   "name": "frontend-tools-configs",
-  "version": "16.2.9",
+  "version": "17.0.0",
   "description": "Brainly Front-End tools configuration files",
   "author": "Brainly",
-  "private": true,
-  "scripts": {
-    "postinstall": "cp .editorconfig ../../",
-    "postversion": "git push && git push --tags",
-    "test": "eslint ./"
-  },
-  "dependencies": {
-    "eslint": "^4.5.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-flowtype": "^2.42.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-react": "^7.7.0"
-  }
+  "private": true
 }
