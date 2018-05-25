@@ -1,31 +1,41 @@
 # Brainly frontend tools configs and docs
 
-This project is a collection of settings for frontend tools used in Brainly
+This project contains Brainly's coding style guide and a collection of settings
+for ECMAScript / front-end related tools.
 
-- .editorconfig - settings for editors [editorconfig.org](http://editorconfig.org/)
-- .sass-lint.yml - config for [scss linter](https://github.com/sasstools/sass-lint)
+> ️⚠️ Since v17.0.0 this package should not be used (installed) directly. To
+> upgrade - remove the dependency from your project and use the setup
+> instructions below.
 
-[Eslint sharable configs](http://eslint.org/docs/developer-guide/shareable-configs)
-- eslint/main.js - config for [eslint.org](http://eslint.org/) with ES2017 enabled
-- eslint/react.js - config for [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
-- eslint/redux.js - config for [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) adjusted for [redux](https://github.com/reactjs/react-redux)
-- eslint/legacy.js - config for [eslint.org](http://eslint.org/) with only ES5 and some legacy settings
-- eslint/babel.js - config for [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) adjust some rules to work with newer syntax
+## Tools configs
 
-Currently supported version: ESLint v4.5.0 
+See the package readmes for installation and usage instructions.
 
-## Sample usage of eslint configs
+* [eslint-config-brainly](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly) - base [ESLint](https://eslint.org/) config for all ES6+ code (with flow)
+* [eslint-config-brainly-react](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-react) - ESLint config for our front-end projects using React
+* [eslint-config-brainly-legacy](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-legacy) - ESLint config for legacy ES5 code
+* [sass-lint-config-brainly](https://github.com/brainly/frontend-tools-configs/tree/master/packages/sass-lint-config-brainly) - config for [sass-lint](https://github.com/sasstools/sass-lint)
+* [EditorConfig](./EditorConfig.md) - editor settings
 
-Create `.eslintrc` in your project main directory.
-Use extend option to include config files like:
-```
-{
-  "extends": [
-    "./node_modules/frontend-tools-configs/eslint/main.js",
-    "./node_modules/frontend-tools-configs/eslint/react.js",
-    "./node_modules/frontend-tools-configs/eslint/redux.js"]
-}
-```
+### I'm setting up a project, what should I use?
+
+* **Node.js** projects:
+  [eslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly),
+  [editorconfig](./EditorConfig.md)
+* **Front-end** projects:
+  * with **React**:
+    [eslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-react),
+    [sasslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/sass-lint-config-brainly),
+    [editorconfig](./EditorConfig.md)
+  * without **React**:
+    [eslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly),
+    [sasslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/sass-lint-config-brainly),
+    [editorconfig](./EditorConfig.md)
+* **legacy ES5 ☠️** :
+  [eslintrc](https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-legacy),
+  [editorconfig](./EditorConfig.md),
+  [psychiatrist](https://www.google.com/maps/search/psychiatrist+nearby)
 
 # Docs
-[docs/](docs/) directory is used to keep track of coding standard decisions that we make.
+
+See the [docs/](docs/) for coding standard decisions we made over time.
