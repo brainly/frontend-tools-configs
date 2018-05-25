@@ -1,0 +1,22 @@
+{
+    "name": "sass-lint-config-brainly",
+    "version": "1.0.0",
+    "description": "Brainly's config for sass-lint",
+    "main": ".sass-lint.yml",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/brainly/frontend-tools-configs"
+    },
+    "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/sass-lint-config-brainly",
+    "keywords": [
+      "sass-lint",
+      "sass-lint-config",
+      "config",
+      "brainly",
+      "sass"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+      "sass-lint": "^1.10.2"
+    }
+  }
