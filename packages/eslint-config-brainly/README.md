@@ -33,6 +33,15 @@ and extend the `"brainly"` setup in your `.eslintrc`:
 }
 ```
 
+## Prettier
+Since `v2.0.0` this config enforces your project to use [`prettier`](https://prettier.io/). It includes [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier/) and [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier/) so you can just run `eslint` as usual and `prettier` will be used to reformat the code. 
+
+If you need to have actual `.prettierrc` file in your project you should extend the [`prettier.config.js`](./prettier.config.js) from this package:
+```js
+// .prettierrc.js or prettier.config.js in your project
+module.exports = require('eslint-config-brainly/prettier.config');
+```
+
 ## More tools config
 
 Looking for more of our tools configs? Check out [this
