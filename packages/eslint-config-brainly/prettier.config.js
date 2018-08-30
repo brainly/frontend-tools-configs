@@ -1,5 +1,6 @@
 module.exports = {
   parser: 'flow',
   singleQuote: true,
-  bracketSpacing: false
+  bracketSpacing: false,
+  printWidth: 100
 };
