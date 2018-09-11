@@ -1,5 +1,13 @@
 module.exports = {
   parser: 'flow',
   singleQuote: true,
-  bracketSpacing: false
+  bracketSpacing: false,
+  overrides: [
+    {
+      files: '*.graphql',
+      options: {
+        parser: 'graphql'
+      }
+    }
+  ]
 };
