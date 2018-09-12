@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-eslint-config-brainly@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-0.1.0.tgz#f67e23ea08ba09a47d3a9d218481691e15cf5017"
+eslint-config-brainly@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-2.1.0.tgz#964c4bfa17c65714529177df874b1e49379a9944"
