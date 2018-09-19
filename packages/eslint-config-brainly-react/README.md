@@ -20,7 +20,7 @@ need to have full control over the eslint / eslit plugins versions) you can just
 rely on this command:
 
 ```sh
-npx install-peerdeps --dev eslint-config-brainly-legacy
+npx install-peerdeps --dev eslint-config-brainly-react
 ```
 
 and extend the `"brainly-react"` setup in your `.eslintrc`:
