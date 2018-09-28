@@ -3,5 +3,5 @@
 
 
 eslint-config-brainly@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-2.1.0.tgz#964c4bfa17c65714529177df874b1e49379a9944"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-2.1.1.tgz#8f75462c507de402e47987e0995d8118954fe2a3"
