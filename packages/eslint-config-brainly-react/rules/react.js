@@ -9,7 +9,13 @@ module.exports = {
       'jsx': true
     }
   },
-
+ 
+  'settings': {
+    'react': {      
+      'version': 'detect'
+    }
+  },
+ 
   'rules': {
     // REACT
     // Enforces consistent naming for boolean props
