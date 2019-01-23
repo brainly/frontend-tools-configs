@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "eslint-config-brainly": "^2.1.0"
+    "eslint-config-brainly": "^2.2.1"
   },
   "peerDependencies": {
     "eslint-plugin-react": "^7.10.0"
