@@ -79,7 +79,7 @@ module.exports = {
     // Prevent usage of unknown DOM property (fixable)
     'react/no-unknown-property': 'error',
     // Prevent usage of unsafe lifecycle methods
-    'react/no-unsafe': 'error',
+    'react/no-unsafe': 'off',
     // Prevent definitions of unused prop types
     'react/no-unused-prop-types': 'error',
     // Prevent usage of setState in componentWillUpdate
