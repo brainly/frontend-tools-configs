@@ -73,7 +73,7 @@ module.exports = {
     // Prevent using string references in ref attribute.
     'react/no-string-refs': 'error',
     // Prevent this from being used in stateless functional components
-    'react/no-this-in-sfc': 'error',
+    'react/no-this-in-sfc': 'off',
     // Prevent invalid characters from appearing in markup
     'react/no-unescaped-entities': 'error',
     // Prevent usage of unknown DOM property (fixable)
