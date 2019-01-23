@@ -14,12 +14,18 @@ module.exports = {
     // REACT
     // Enforces consistent naming for boolean props
     'react/boolean-prop-naming': 'off',
+    // Forbid "button" element without an explicit "type" attribute
+    'react/button-has-type:': 'off',
     // Prevent extraneous defaultProps on components
     'react/default-props-match-prop-types': 'error',
+    // Rule enforces consistent usage of destructuring assignment in component
+    'react/destructuring-assignment': 'off',
     // Prevent missing displayName in a React component definition
-    'react/display-name': 'error',
+    'react/display-name': 'off',
     // Forbid certain props on Components
     'react/forbid-component-props': 'off',
+    // Forbid certain props on DOM Nodes
+    'react/forbid-dom-props': 'off',
     // Forbid certain elements
     'react/forbid-elements': 'off',
     // Forbid certain propTypes
@@ -49,7 +55,7 @@ module.exports = {
     // Prevent usage of isMounted
     'react/no-is-mounted': 'error',
     // Prevent multiple component definition per file
-    'react/no-multi-comp': 'error',
+    'react/no-multi-comp': 'off',
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     'react/no-redundant-should-component-update': 'error',
     // Prevent usage of the return value of React.render
@@ -60,10 +66,14 @@ module.exports = {
     'react/no-typos': 'error',
     // Prevent using string references in ref attribute.
     'react/no-string-refs': 'error',
+    // Prevent this from being used in stateless functional components
+    'react/no-this-in-sfc': 'error',
     // Prevent invalid characters from appearing in markup
     'react/no-unescaped-entities': 'error',
     // Prevent usage of unknown DOM property (fixable)
     'react/no-unknown-property': 'error',
+    // Prevent usage of unsafe lifecycle methods
+    'react/no-unsafe': 'error',
     // Prevent definitions of unused prop types
     'react/no-unused-prop-types': 'error',
     // Prevent usage of setState in componentWillUpdate
@@ -88,6 +98,8 @@ module.exports = {
     'react/sort-comp': 'error',
     // Enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': 'off',
+    // Enforce state initialization style
+    'react/state-in-constructor': 'off',
     // Enforce style prop value being an object
     'react/style-prop-object': 'error',
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
@@ -96,6 +108,8 @@ module.exports = {
     // JSX
     // Enforce boolean attributes notation in JSX (fixable)
     'react/jsx-boolean-value': 'error',
+    // Enforce or disallow spaces inside of curly braces in JSX attributes and expression
+    'react/jsx-child-element-spacing': 'off',
     // Validate closing bracket location in JSX (fixable)
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
     // Validate closing tag location in JSX
@@ -116,6 +130,8 @@ module.exports = {
     'react/jsx-indent-props': ['error', 2],
     // Validate JSX has key prop when in array or iterator
     'react/jsx-key': 'error',
+    // Validate JSX maximum depth
+    'react/jsx-max-depth': 'off',
     // Limit maximum of props on a single line in JSX
     'react/jsx-max-props-per-line': ['error', {
       'maximum': 1,
@@ -133,10 +149,22 @@ module.exports = {
     'react/jsx-no-target-blank': 'error',
     // Disallow undeclared variables in JSX
     'react/jsx-no-undef': 'error',
+    // Limit to one expression per line in JSX
+    'react/jsx-one-expression-per-line': 'off',
+    // Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
+    'react/jsx-curly-brace-presence': ['error', { props: "never", children: "never" }],
+    // Enforce shorthand or standard form for React fragments 
+    'react/jsx-fragments': ['error', 'syntax'],
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 'error',
+    // Disallow multiple spaces between inline JSX props
+    'react/jsx-props-no-multi-spaces': 'error',
+    // Enforce defaultProps declarations alphabetical sorting 
+    'react/jsx-sort-default-props': 'off',
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 'off',
+    // Validate spacing before closing bracket in JSX
+    'react/jsx-space-before-closing': ['error', 'always'],
     // Validate whitespace in and around the JSX opening and closing brackets (fixable)
     'react/jsx-tag-spacing': 'error',
     // Prevent React to be incorrectly marked as unused
