@@ -9,7 +9,13 @@ module.exports = {
       'jsx': true
     }
   },
-
+ 
+  'settings': {
+    'react': {      
+      'version': 'detect'
+    }
+  },
+ 
   'rules': {
     // REACT
     // Enforces consistent naming for boolean props
@@ -67,13 +73,13 @@ module.exports = {
     // Prevent using string references in ref attribute.
     'react/no-string-refs': 'error',
     // Prevent this from being used in stateless functional components
-    'react/no-this-in-sfc': 'error',
+    'react/no-this-in-sfc': 'off',
     // Prevent invalid characters from appearing in markup
     'react/no-unescaped-entities': 'error',
     // Prevent usage of unknown DOM property (fixable)
     'react/no-unknown-property': 'error',
     // Prevent usage of unsafe lifecycle methods
-    'react/no-unsafe': 'error',
+    'react/no-unsafe': 'off',
     // Prevent definitions of unused prop types
     'react/no-unused-prop-types': 'error',
     // Prevent usage of setState in componentWillUpdate
@@ -154,7 +160,7 @@ module.exports = {
     // Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
     'react/jsx-curly-brace-presence': ['error', { props: "never", children: "never" }],
     // Enforce shorthand or standard form for React fragments 
-    'react/jsx-fragments': ['error', 'syntax'],
+    'react/jsx-fragments': ['error', 'element'],
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 'error',
     // Disallow multiple spaces between inline JSX props
