@@ -18,8 +18,7 @@ module.exports = {
     'babel/object-curly-spacing': ['error', 'never'],
 
     // doesn't complain about JSX fragment shorthand syntax (<>foo</>;)
-    'quotes': 'off',
-    'babel/quotes': ['error', 'single'],
+    'babel/quotes': 'off',
 
     // require or disallow use of semicolons instead of ASI
     'semi': 'off',
