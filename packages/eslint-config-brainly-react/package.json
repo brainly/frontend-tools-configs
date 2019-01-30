@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brainly-react",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Brainly's shareable ESLint config for React projects",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "eslint-config-brainly": "^2.3.0"
+    "eslint-config-brainly": "^2.3.1"
   },
   "peerDependencies": {
     "eslint-plugin-react": "^7.12.4"
