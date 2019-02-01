@@ -23,7 +23,7 @@ module.exports = {
     'flowtype/define-flow-type': 'error',
     'flowtype/delimiter-dangle': [
       'error',
-      'never'
+      'always-multiline'
     ],
     'flowtype/generic-spacing': [
       'error',
