@@ -309,7 +309,7 @@ module.exports = {
     // enforce or disallow capitalization of the first letter of a comment
     'capitalized-comments': 'off',
     // disallow trailing commas in object literals
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
     // enforce spacing before and after comma
     'comma-spacing': ['error', {'before': false, 'after': true}],
     // enforce one true comma style
