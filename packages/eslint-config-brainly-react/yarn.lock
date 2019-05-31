@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
-eslint-config-brainly@^2.1.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-2.1.1.tgz#8f75462c507de402e47987e0995d8118954fe2a3"
+eslint-config-brainly@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-brainly/-/eslint-config-brainly-2.4.0.tgz#a80803694a493b90ce5fe87af46e740faa809321"
+  integrity sha512-/JkzELwqIbiKVmjfhLh4R+gv8MPSBg2UyTWggTVeuU6/+5FT7F0w1rIBm6YVc2dR186DtllwSGLic8gcg43N0g==
+
+eslint-plugin-react-hooks@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.6.0.tgz#348efcda8fb426399ac7b8609607c7b4025a6f5f"
+  integrity sha512-lHBVRIaz5ibnIgNG07JNiAuBUeKhEf8l4etNx5vfAEwqQ5tcuK3jV9yjmopPgQDagQb7HwIuQVsE3IVcGrRnag==

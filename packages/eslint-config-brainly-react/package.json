@@ -20,6 +20,7 @@
     "eslint-config-brainly": "^2.4.0"
   },
   "peerDependencies": {
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0"
   }
 }
