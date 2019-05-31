@@ -5,5 +5,11 @@ module.exports = {
     require.resolve('./rules/redux.js'),
     'prettier/react'
   ],
-  rules: {}
+  plugins: [
+    'react-hooks'
+  ],
+  rules: {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
+  }
 };
