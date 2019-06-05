@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brainly-react",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Brainly's shareable ESLint config for React projects",
   "main": "index.js",
   "repository": {

@@ -9,13 +9,13 @@ module.exports = {
       'jsx': true
     }
   },
- 
+
   'settings': {
-    'react': {      
+    'react': {
       'version': 'detect'
     }
   },
- 
+
   'rules': {
     // REACT
     // Enforces consistent naming for boolean props
@@ -144,7 +144,7 @@ module.exports = {
       'when': 'multiline'
     }],
     // Prevent usage of .bind() and arrow functions in JSX props
-    'react/jsx-no-bind': 'error',
+    'react/jsx-no-bind': 'off',
     // Prevent comments from being inserted as text nodes
     'react/jsx-no-comment-textnodes': 'error',
     // Prevent duplicate props in JSX
@@ -159,13 +159,13 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     // Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
     'react/jsx-curly-brace-presence': ['error', { props: "never", children: "never" }],
-    // Enforce shorthand or standard form for React fragments 
+    // Enforce shorthand or standard form for React fragments
     'react/jsx-fragments': ['error', 'syntax'],
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 'error',
     // Disallow multiple spaces between inline JSX props
     'react/jsx-props-no-multi-spaces': 'error',
-    // Enforce defaultProps declarations alphabetical sorting 
+    // Enforce defaultProps declarations alphabetical sorting
     'react/jsx-sort-default-props': 'off',
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 'off',
