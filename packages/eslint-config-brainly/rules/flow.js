@@ -76,7 +76,8 @@ module.exports = {
     ],
     'flowtype/type-import-style': [
       'error',
-      'declaration'
+      'identifier',
+      {ignoreTypeDefault: true}
     ],
     'flowtype/union-intersection-spacing': [
       'error',
