@@ -94,7 +94,7 @@ rules:
   # Disallow the use of hexadecimal colors
   no-color-hex: 0
   # Enforce the use of hexadecimal color values rather than literals.
-  no-color-keywords: 2
+  no-color-keywords: 0
   # Disallow the use of color literals and basic color functions in any declarations other than variables or maps/lists.
   no-color-literals: 2
   # Warn against the use of combinators.
