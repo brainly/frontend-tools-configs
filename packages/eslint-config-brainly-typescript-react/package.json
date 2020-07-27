@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-brainly-typescript-react",
+  "version": "1.0.0",
+  "description": "Brainly's shareable typescript ESLint config for react applications",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainly/frontend-tools-configs"
+  },
+  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-typescript-react",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "brainly",
+    "typescript"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint-plugin-css-modules": "^2.11.0"
+  }
+}

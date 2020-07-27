@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-brainly-typescript-node",
+  "version": "1.0.0",
+  "description": "Brainly's shareable typescript ESLint config for node applications",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainly/frontend-tools-configs"
+  },
+  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-typescript-node",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "brainly",
+    "typescript",
+    "node"
+  ],
+  "license": "MIT"
+}
