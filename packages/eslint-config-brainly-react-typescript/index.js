@@ -4,7 +4,6 @@ module.exports = {
     require.resolve('./rules/prettier.js'),
     require.resolve('./rules/css-modules.js'),
     require.resolve('./rules/jest.js'),
-    require.resolve('./rules/graphql.js'),
     require.resolve('./rules/react.js'),
   ],
   rules: {},
