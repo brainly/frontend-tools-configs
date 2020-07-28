@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-brainly-react-typescript",
+  "name": "eslint-config-brainly-typescript",
   "version": "1.0.0",
   "description": "Brainly's base shareable typescript ESLint config",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/brainly/frontend-tools-configs"
   },
-  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-react-typescript",
+  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/eslint-config-brainly-typescript",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -18,10 +18,8 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^7.5.0",
-    "eslint-config-airbnb": "^18.2.0",
     "eslint-config-airbnb-typescript": "^9.0.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-jest": "^23.18.0",
     "eslint-plugin-prettier": "^3.1.2",
     "@typescript-eslint/eslint-plugin": "^3.6.1",

@@ -1,0 +1,16 @@
+{
+  "name": "base-tsconfig-brainly-node",
+  "version": "1.0.0",
+  "description": "Brainly's config for typescript node",
+  "main": "tsconfig.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainly/frontend-tools-configs"
+  },
+  "homepage": "https://github.com/brainly/frontend-tools-configs/tree/master/packages/base-tsconfig-brainly-node",
+  "keywords": [
+    "typescript",
+    "tsconfig"
+  ],
+  "license": "MIT"
+}
