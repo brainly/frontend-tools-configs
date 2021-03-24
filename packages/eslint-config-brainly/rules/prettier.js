@@ -1,6 +1,6 @@
 var prettierConfig = require('../prettier.config.js');
 module.exports = {
-  extends: ['prettier', 'prettier/flowtype'],
+  extends: ['prettier'],
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': ['error', prettierConfig]
